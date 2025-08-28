@@ -1,31 +1,24 @@
-import { Routes,Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home";
-
-function App() {
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Footer1 from "./Components/Footer1";
+import './css/index.css';
+import './css/style.css';
   
+function App() {
   return (
     <div className="App">
-       <ul>
-          <li>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link to="/category">Category</Link>
-          </li>
-          <li>
-            <Link to="/cart">Cart</Link>
-          </li>
-          <li>
-            <Link to="/forecast">Forecast</Link>
-          </li>
-       </ul>
+       <Header />
+       
        <main>
         <div className="container">
             <Routes>
-                <Route path="/" Component={Home} />
+                <Route path="/" element={<Home />} />
             </Routes>
+            <Footer1 />
+            <Footer />
         </div>
-        
        </main>
     </div>
   );
