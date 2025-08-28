@@ -1,5 +1,5 @@
-// src/components/Header.js
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -69,10 +69,10 @@ function Header() {
         <div className="container nav__container">
           <ul className="nav__list">
             <li className="nav__item">
-              <a href="#" className="nav__link">
+              <Link to="/" className="nav__link">
                 <img src="/img/trangchu.png" alt="Trang chủ" height="20" />
-                Trang chủ
-              </a>
+                Home
+              </Link>
             </li>
             <li className="nav__item">
               <a href="#" className="nav__link">

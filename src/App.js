@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link,BrowserRouter as Router } from "react-router-dom";
 import Home from "./Pages/Home";
 import Header from "./Components/Header";
 import './css/index.css';

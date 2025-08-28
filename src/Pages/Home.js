@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
+import Banner from "../Components/Banner";
 
+function Home() {
+  return (
+    <div>
+      <Banner />
+      <h1>Home</h1>
+    </div>
+  );
+}
 
-function Home(){
-   <h1>Home Page</h1>
-    
-};
 export default Home;
