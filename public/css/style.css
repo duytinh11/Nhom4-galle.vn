@@ -1,0 +1,280 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer {
+      width: 100%;
+    }
+
+    .footer-top {
+      background-color: #6a1b9a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+      gap: 50px;
+      text-align: center;
+    }
+
+    .footer-top div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-top img {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      gap: 40px;
+    }
+
+    .footer-bottom div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-bottom img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 8px;
+    }
+
+    .footer-container {
+        display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.contact-info, .payment-methods, .certifications {
+    width: 500px;
+    float: left;
+  grid-column: span 2;
+}
+
+.footer-container h3 {
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container li {
+  margin-bottom: 8px;
+}
+
+.footer-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 18%;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  color: #5b1790;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+
+    .support-button {
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .footer-selection {
+      background-color: #6a1b9a;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .footer-selection .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .footer-selection button {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .footer-selection button.active {
+      background-color: #FFEB3B;
+    }
+
+    .footer-selection .info-box {
+    background-color: #6a1b9a; /* Màu tím giống thanh lựa chọn */
+    color: #fff;               /* Màu chữ trắng */
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: auto;
+    max-width: 800px;
+  }
+
+
+    .footer-selection .copyright {
+      color: #fff;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    .footer-brand-bar {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 10px;
+  gap: 40px;
+}
+
+.footer-brand-bar .brand-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-brand-bar .brand-item img {
+  max-height: 40px;
+  margin-bottom: 6px;
+}
+
+.footer-brand-bar .brand-item p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-brand-bar .brand-galle {
+  color: #6a1b9a;
+}
+.footer-brand-bar .brand-donghothuysy {
+  color: #d32f2f;
+}
+.footer-brand-bar .brand-gallecare,
+.footer-brand-bar .brand-sen {
+  color: #fbc02d;
+}
+
+.footer-brand-bar .separator {
+  width: 1px;
+  height: 50px;
+  background-color: #ccc;
+}
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  width: 90%;
+  margin: 30px auto 0 auto;
+}
+/* Fix layout - căn đều 5 cột footer với phần bên trên */
+
+.info-tabs .tab-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.info-tabs .tab-content h4 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFEB3B;
+}
+
+.info-tabs .tab-content {
+  display: none;
+  color: white;
+}
+
+.info-tabs .tab-content.active {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+
+.info-tabs .tab-content .store-card {
+  background-color: #6a1b9a;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 15px;
+}
+
