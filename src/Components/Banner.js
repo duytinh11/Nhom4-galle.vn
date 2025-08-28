@@ -16,14 +16,14 @@ const BannerSection = () => {
             <div className="carousel-inner rounded-custom shadow-sm h-100">
               <div className="carousel-item active">
                 <img
-                  src="/img/1.png"
+                  src="/img/anhbaner1.jpg"
                   className="d-block w-100 h-100"
                   alt="Slide 1"
                 />
               </div>
               <div className="carousel-item">
                 <img
-                  src="/img/2.png"
+                  src="/img/anhbaner2.jpg"
                   className="d-block w-100 h-100"
                   alt="Slide 2"
                 />
