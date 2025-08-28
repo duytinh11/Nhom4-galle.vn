@@ -75,11 +75,6 @@ const BannerSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Ảnh ngang ở trung tâm */}
-      <div className="trungtam mt-3">
-        <img src="imgs/22.jpg" alt="anhngang" />
-      </div>
     </div>
   );
 };
