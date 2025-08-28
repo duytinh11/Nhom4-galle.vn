@@ -64,6 +64,78 @@ function Header() {
           </div>
         </div>
       </div>
+       {/* Nav */}
+      <nav className="nav">
+        <div className="container nav__container">
+          <ul className="nav__list">
+            <li className="nav__item">
+              <a href="#" className="nav__link">
+                <img src="/img/trangchu.png" alt="Trang chủ" height="20" />
+                Trang chủ
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#" className="nav__link">
+                <img src="/img/thuonghieu.png" alt="Thương hiệu" height="20" />
+                Thương hiệu
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#" className="nav__link">
+                <img
+                  src="/img/donghodeotay.png"
+                  alt="Đồng hồ đeo tay"
+                  height="20"
+                />
+                Đồng hồ đeo tay
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#" className="nav__link">
+                <img
+                  src="/img/donghotreotuong.png"
+                  alt="Đồng hồ trang trí"
+                  height="20"
+                />
+                Đồng hồ trang trí
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#" className="nav__link">
+                <img src="/img/batlua.png" alt="Phụ kiện" height="20" />
+                Phụ kiện
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#" className="nav__link">
+                <img src="/img/phukien.png" alt="Dịch vụ" height="20" />
+                Dịch vụ
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#" className="nav__link">
+                <img
+                  src="/img/suachua.png"
+                  alt="Sửa chữa Galle Care"
+                  height="20"
+                />
+                Sửa chữa Galle Care
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#" className="nav__link">
+                <img src="/img/tintuc.png" alt="Tin tức" height="20" />
+                Tin tức
+              </a>
+            </li>
+            <li className="nav__item">
+              <a href="#" className="nav__link nav__sale">
+                SALE
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
   );
 }
