@@ -14,9 +14,11 @@ const tabList = [
 ];
 
 const Footer = () => {
-    const [activeTab, setActiveTab] = useState('tab-all');
+    const [activeTab, setActiveTab] = useState(null); // Đổi mặc định thành null
 
     const renderTabContent = () => {
+        if (!activeTab) return null; // Nếu chưa chọn tab nào thì không hiện gì
+
         switch (activeTab) {
             case 'tab-all':
                 return (
@@ -174,22 +176,25 @@ const Footer = () => {
         <footer className="footer">
             {/* ...existing code... */}
             <div className="footer-selection">
-                <div className="btn-group">
+                <div className="btn-group" style={{ overflowX: 'auto', whiteSpace: 'nowrap', paddingBottom: '4px' }}>
                     {tabList.map(tab => (
                         <button
                             key={tab.id}
                             className={activeTab === tab.id ? 'active' : ''}
                             onClick={() => setActiveTab(tab.id)}
+                            style={{ display: 'inline-block', minWidth: '120px', marginRight: '8px' }}
                         >
                             {tab.label}
                         </button>
                     ))}
                 </div>
+                <hr style={{ margin: '12px 0', borderColor: '#eee' }} /> {/* Đường gạch ngang dưới btn-group */}
                 <div className="info-tabs">
                     <div className="tab-content active">
                         {renderTabContent()}
                     </div>
                 </div>
+                <hr style={{ margin: '12px 0', borderColor: '#eee' }} /> {/* Đường gạch ngang trên copyright */}
                 <div className="copyright">
                     © All rights reserved - Bản quyền thuộc về Công ty TNHH Một mình tao làm footer
                 </div>
@@ -199,4 +204,4 @@ const Footer = () => {
 };
 
 export default Footer;
-// ...existing code...
+// ...existing
