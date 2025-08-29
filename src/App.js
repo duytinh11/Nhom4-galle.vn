@@ -38,7 +38,7 @@ function App() {
                 <Route path="/news" element={<News/>}/>
                 <Route path="/sale" element={<Sale/>}/>
                 <Route path="/casio" element={<Casio/>}/>
-                <Route path="/garmin" element={<Garmin/>}/>
+                <Route path="/garmin" element={<Garmin/>}/> 
             </Routes>
         </div>
        </main>
