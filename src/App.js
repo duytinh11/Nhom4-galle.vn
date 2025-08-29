@@ -1,6 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Footer1 from "./Components/Footer1";
+import ProductList from './Pages/ProductList';
 import './css/index.css';
 import Watchmen from "./Pages/Watchmen";
 import Watchwomen from "./Pages/Watchwomen";
@@ -16,6 +19,7 @@ import News from "./Pages/News";
 import Sale from "./Pages/Sale";
 import Casio from "./Pages/Casio";
 import Garmin from "./Pages/Garmin";
+import './css/style.css';
   
 function App() {
   return (
@@ -39,7 +43,10 @@ function App() {
                 <Route path="/sale" element={<Sale/>}/>
                 <Route path="/casio" element={<Casio/>}/>
                 <Route path="/garmin" element={<Garmin/>}/> 
+                <Route path="/dong-ho" element={<ProductList />} />
             </Routes>
+            <Footer1 />
+            <Footer />
         </div>
        </main>
     </div>
