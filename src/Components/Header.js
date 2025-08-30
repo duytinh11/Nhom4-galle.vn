@@ -162,7 +162,8 @@ function Header() {
                   id="basic-nav-dropdown"
                 >
                 <NavDropdown.Item as={Link} to="/knowledge">Kiến thức đồng hồ</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/news">Bản tin đồng hồ</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/news">Chứng nhận thương hiệu</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/newfeed">Bản tin đồng hồ</NavDropdown.Item>
               </NavDropdown>
             </li>
             <li className="nav__item">

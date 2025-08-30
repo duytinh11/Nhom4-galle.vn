@@ -1,6 +1,7 @@
 // Footer.jsx
 import React from "react";
 import "../css/style.css"; // Optional: create and import your CSS
+import { Link } from "react-router-dom";
 
 const Footer = () => (
   <footer className="footer">
@@ -153,13 +154,10 @@ const Footer = () => (
             <h3>DỊCH VỤ</h3>
             <ul>
               <li>
-                <a href="#">Cá nhân hóa (In khắc)</a>
+                <Link to={"/service"}>Cá nhân hoá - in khắc</Link>
               </li>
               <li>
-                <a href="#">Dịch vụ sửa chữa</a>
-              </li>
-              <li>
-                <a href="#">Ưu đãi hội viên Galle</a>
+                <Link to={"/repair"}>Dịch vụ sửa chữa</Link>
               </li>
             </ul>
           </div>
@@ -167,22 +165,10 @@ const Footer = () => (
             <h3>VỀ CHÚNG TÔI</h3>
             <ul>
               <li>
-                <a href="#">Giới thiệu về Galle</a>
+                <Link to={"/profile"}>Giới thiệu về Galle</Link>
               </li>
               <li>
-                <a href="#">Triết lí kinh doanh</a>
-              </li>
-              <li>
-                <a href="#">Chứng nhận thương hiệu</a>
-              </li>
-              <li>
-                <a href="#">Khách hàng nói gì</a>
-              </li>
-              <li>
-                <a href="#">Hệ thống cửa hàng</a>
-              </li>
-              <li>
-                <a href="#">Hoạt động xã hội</a>
+                <Link to={"/news"}>Chứng nhận thương hiệu</Link>
               </li>
             </ul>
           </div>
@@ -190,19 +176,13 @@ const Footer = () => (
             <h3>TIN TỨC</h3>
             <ul>
               <li>
-                <a href="#">Kiến thức đồng hồ</a>
+                <Link to={"/knowledge"}>Kiến thức đồng hồ</Link>
               </li>
               <li>
-                <a href="#">Bản tin Galle Watch</a>
+                <Link to={"/newfeed"}>Bản tin Galle</Link>
               </li>
               <li>
-                <a href="#">Tin khuyến mại</a>
-              </li>
-              <li>
-                <a href="#">Tuyển dụng</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
+                <Link to={"/sale"}>Khuyến mại</Link>
               </li>
             </ul>
           </div>
@@ -210,42 +190,19 @@ const Footer = () => (
             <h3>CHĂM SÓC KHÁCH HÀNG</h3>
             <ul>
               <li>
-                <a href="#">Ưu đãi hội viên</a>
+                <Link to={"/member"}>Ưu đãi hội viên</Link>
               </li>
               <li>
-                <a href="#">Chính sách đổi sản phẩm</a>
+                <Link to={"/return"}>Chính sách đổi sản phẩm</Link>
               </li>
               <li>
-                <a href="#">Chính sách bảo hành</a>
+                <Link to={"/warranty"}>Chính sách bảo hành</Link>
               </li>
               <li>
-                <a href="#">Câu hỏi thường gặp</a>
+                <Link to={"/comment"}>Góp ý - khiếu nại</Link>
               </li>
               <li>
-                <a href="#">Góp ý - Khiếu nại</a>
-              </li>
-              <li>
-                <a href="#">Chính sách bảo mật thông tin</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h3>HƯỚNG DẪN MUA HÀNG</h3>
-            <ul>
-              <li>
-                <a href="#">Đăng nhập tài khoản</a>
-              </li>
-              <li>
-                <a href="#">Hướng dẫn mua hàng</a>
-              </li>
-              <li>
-                <a href="#">Chính sách đổi hàng</a>
-              </li>
-              <li>
-                <a href="#">Thanh toán</a>
-              </li>
-              <li>
-                <a href="#">Trả góp</a>
+                <Link to={"/security"}>Chính sách bảo mật thông tin</Link>
               </li>
             </ul>
           </div>

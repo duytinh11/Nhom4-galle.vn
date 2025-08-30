@@ -3,7 +3,6 @@ import Home from "./Pages/Home";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Footer1 from "./Components/Footer1";
-import ProductList from './Pages/ProductList';
 import './css/index.css';
 import Watchmen from "./Pages/Watchmen";
 import Watchwomen from "./Pages/Watchwomen";
@@ -20,6 +19,13 @@ import Sale from "./Pages/Sale";
 import Casio from "./Pages/Casio";
 import Garmin from "./Pages/Garmin";
 import './css/style.css';
+import Newfeed from "./Pages/Newfeed";
+import Profile from "./Pages/Profile";
+import Member from "./Pages/Member";
+import Comment from "./Pages/Comment";
+import Warranty from "./Pages/Warranty";
+import Return from "./Pages/Return";
+import Security from "./Pages/Security";
   
 function App() {
   return (
@@ -42,8 +48,14 @@ function App() {
                 <Route path="/news" element={<News/>}/>
                 <Route path="/sale" element={<Sale/>}/>
                 <Route path="/casio" element={<Casio/>}/>
-                <Route path="/garmin" element={<Garmin/>}/> 
-                <Route path="/dong-ho" element={<ProductList />} />
+                <Route path="/garmin" element={<Garmin/>}/>
+                <Route path="/newfeed" element={<Newfeed/>}/>
+                <Route path="/profile" element={<Profile/>}/>
+                <Route path="/member" element={<Member/>}/>
+                <Route path="/comment" element={<Comment/>}/> 
+                <Route path="/warranty" element={<Warranty/>}/> 
+                <Route path="/return" element={<Return/>}/> 
+                <Route path="/security" element={<Security/>}/>     
             </Routes>
             <Footer1 />
             <Footer />
