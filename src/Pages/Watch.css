@@ -1,0 +1,205 @@
+body {
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  color: #333;
+}
+.watch-list {
+    max-width: 1200px;
+}
+.watch-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.watch-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+.watch-img {
+    background: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    height: 220px;
+    object-fit: contain;
+}
+.watch-card:hover .watch-img {
+    transform: scale(1.05);
+}
+.watch-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    min-height: 45px;
+    text-align: center;
+}
+.watch-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+.watch-text p {
+    margin: 4px 0;
+    font-style: italic;
+    color: #777;
+}
+.watch-btn {
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    border: none;
+    transition: background 0.3s ease;
+    color: #fff;
+}
+.watch-btn:hover {
+    background: linear-gradient(135deg, #8e44ad, #6d2c91);
+}
+.watch-text {
+  text-align: center;   
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.6;     
+}
+.service h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.service p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.service .subtitle {
+    font-size: 20px;
+    color: #8c2d58;
+    margin-top: 10px;
+    text-align: center;
+}
+.service .ytb {
+    text-align: center;
+}
+.service .banner {
+    height: 80px;
+    overflow: hidden;
+}
+.service .newimg {
+    display: block;        
+    margin-left: auto;     
+    margin-right: auto;    
+    max-width: 400px;      
+    height: auto;
+}
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  z-index: 10;
+}
+.oldprice {
+    text-decoration: line-through;
+    color: #888; 
+}
+.saleprice {
+    color: #8e44ad; 
+    font-weight: bold;
+}
+.home-img {
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+.home-img:hover {
+    transform: scale(1.1); 
+}
+.servicehome {
+    display: block;   
+    margin: 0 auto;   
+    max-width: 350px;        
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #f7edff);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+.servicehome h5 {
+    font-weight: 500;
+    color: #333;
+}
+.servicehome h3 {
+    font-weight: 700;
+    color: #6a0dad;
+}
+.servicehome .highlight {
+    color: #9d4edd;
+}
+.servicehome h6 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.servicehome-images {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.img-main {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.img-small {
+    position: absolute;
+    bottom: -20px;
+    left: -30px;
+    width: 120px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.servicehome-btn {
+    background: linear-gradient(90deg, #9d4edd, #6a0dad);
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.servicehome-btn:hover {
+    background: linear-gradient(90deg, #6a0dad, #9d4edd);
+}
+.why-list {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: #f3f3f3; 
+    padding: 20px 30px;
+    border-radius: 12px;
+    gap: 20px;
+}
+.why-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    flex: 1;  
+}
+.icon-box {
+    background: #6a1b9a; 
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-box img {
+    width: 30px;
+    height: 30px;
+}
+.why-item p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+}
