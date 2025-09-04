@@ -75,7 +75,36 @@ const BannerSection = () => {
           </div>
         </div>
       </div>
+      <div>
+         <div className="feature-bar">
+      <div className="feature-item">
+        <img src="imgs/icon1.png" alt="Bảo hành" className="feature-icon" />
+        <div className="feature-text">
+          <p className="feature-title">Trung tâm bảo hành chính hãng</p>
+          <p className="feature-sub">TIÊU CHUẨN THỤY SĨ</p>
+        </div>
+      </div>
+
+      <div className="feature-item">
+        <img src="imgs/icon2.png" alt="Uy tín" className="feature-icon" />
+        <div className="feature-text">
+          <p className="feature-title">Thương hiệu uy tín</p>
+          <p className="feature-sub">22 NĂM PHÁT TRIỂN</p>
+        </div>
+      </div>
+
+      <div className="feature-item">
+        <img src="imgs/icon3.png" alt="Đa dạng" className="feature-icon" />
+        <div className="feature-text">
+          <p className="feature-title">Đa dạng thương hiệu</p>
+          <p className="feature-sub">30+ THƯƠNG HIỆU CHÍNH HÃNG</p>
+        </div>
+      </div>
     </div>
+      </div>
+    </div>
+    
+    
   );
 };
 

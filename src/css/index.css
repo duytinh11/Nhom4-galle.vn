@@ -196,7 +196,7 @@ h2 {
 }
 
 .nav__container {
-  border-top: 2px solid #6a1b9a;
+  border-top: 2px solid #662D91;
   border-bottom: 1px solid #ddd;
 }
 
@@ -230,7 +230,7 @@ h2 {
 }
 
 .nav__link:hover {
-  color: #6a1b9a;
+  color: #662D91;
   background: #f5f5f5;
 }
 
@@ -250,4 +250,82 @@ h2 {
 }
 .rounded-custom {
   border-radius: 12px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 12px 0 8px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.card-btn {
+  background: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background: #0059c1;
+}
+.feature-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #662D91; /* tím */
+  padding: 20px;
+  color: white;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.feature-sub {
+  font-size: 14px;
+  margin: 0;
+  color: #f0f0f0;
 }
