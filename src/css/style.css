@@ -1,61 +1,70 @@
 body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-    .footer {
-      width: 100%;
-    }
+.footer {
+  width: 100vw;
+  
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 0;
+  /* Nếu muốn có bóng dưới footer, thêm dòng sau */
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.04);
+}
 
-    .footer-top {
-      background-color: #6a1b9a;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px 0;
-      gap: 50px;
-      text-align: center;
-    }
+.footer-top {
+  background-color: #6a1b9a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  gap: 50px;
+  text-align: center;
+}
 
-    .footer-top div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+.footer-top div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    .footer-top img {
-      width: 32px;
-      height: 32px;
-      margin-bottom: 8px;
-    }
+.footer-top img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
 
-    .footer-bottom {
-      background-color: #ffffff;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 20px 0;
-      gap: 40px;
-    }
+.footer-bottom {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  gap: 40px;
+}
 
-    .footer-bottom div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #000;
-      text-align: center;
-      font-size: 14px;
-    }
+.footer-bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+}
 
-    .footer-bottom img {
-      width: 80px;
-      height: auto;
-      margin-bottom: 8px;
-    }
+.footer-bottom img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 8px;
+}
 
-    .footer-container {
-        display: flex;
+.footer-container {
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   max-width: 1200px;
@@ -64,9 +73,11 @@ body {
   background-color: #ffffff;
 }
 
-.contact-info, .payment-methods, .certifications {
-    width: 500px;
-    float: left;
+.contact-info,
+.payment-methods,
+.certifications {
+  width: 500px;
+  float: left;
   grid-column: span 2;
 }
 
@@ -129,71 +140,73 @@ body {
 }
 
 
-    .support-button {
-      background-color: #6a1b9a;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      margin-top: 10px;
-      cursor: pointer;
-      font-weight: bold;
-    }
+.support-button {
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-    .footer-note {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #999;
-    }
+.footer-note {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #999;
+}
 
-    .footer-selection {
-      background-color: #6a1b9a;
-      padding: 30px 20px;
-      text-align: center;
-      margin-top: 30px;
-    }
+.footer-selection {
+  background-color: #6a1b9a;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 30px;
+}
 
-    .footer-selection .btn-group {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
+.footer-selection .btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
 
-    .footer-selection button {
-      background-color: #fff;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      padding: 10px 18px;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.footer-selection button {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    .footer-selection button.active {
-      background-color: #FFEB3B;
-    }
+.footer-selection button.active {
+  background-color: #FFEB3B;
+}
 
-    .footer-selection .info-box {
-    background-color: #6a1b9a; /* Màu tím giống thanh lựa chọn */
-    color: #fff;               /* Màu chữ trắng */
-    padding: 20px;
-    font-size: 16px;
-    border-radius: 8px;
-    margin: auto;
-    max-width: 800px;
-  }
+.footer-selection .info-box {
+  background-color: #6a1b9a;
+  /* Màu tím giống thanh lựa chọn */
+  color: #fff;
+  /* Màu chữ trắng */
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: auto;
+  max-width: 800px;
+}
 
 
-    .footer-selection .copyright {
-      color: #fff;
-      font-size: 14px;
-      margin-top: 30px;
-    }
+.footer-selection .copyright {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 30px;
+}
 
-    .footer-brand-bar {
+.footer-brand-bar {
   background-color: #f1f1f1;
   display: flex;
   flex-wrap: wrap;
@@ -224,9 +237,11 @@ body {
 .footer-brand-bar .brand-galle {
   color: #6a1b9a;
 }
+
 .footer-brand-bar .brand-donghothuysy {
   color: #d32f2f;
 }
+
 .footer-brand-bar .brand-gallecare,
 .footer-brand-bar .brand-sen {
   color: #fbc02d;
@@ -237,6 +252,7 @@ body {
   height: 50px;
   background-color: #ccc;
 }
+
 .footer-divider {
   border: none;
   height: 1px;
@@ -244,6 +260,7 @@ body {
   width: 90%;
   margin: 30px auto 0 auto;
 }
+
 /* Fix layout - căn đều 5 cột footer với phần bên trên */
 
 .info-tabs .tab-content {
@@ -278,3 +295,21 @@ body {
   padding: 15px;
 }
 
+/* Responsive cho mobile */
+@media (max-width: 900px) {
+
+  .footer-container,
+  .footer-service,
+  .footer-top,
+  .footer-bottom,
+  .footer-selection,
+  .footer-brand-bar {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

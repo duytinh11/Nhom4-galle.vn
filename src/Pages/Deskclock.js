@@ -1,9 +1,12 @@
+import { useContext } from 'react';
+import { CartContext } from '../contexts/CartContext';
 import { Col, Container, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "./Watch.css";
 
-function Deskclock() {
+function Deskclock({ onAddToCart }) {
+  const { addToCart } = useContext(CartContext);
   const watches = [
     { id: "22948-Q10352", name: "Đồng hồ để bàn Hermle", price: "146.059.000₫", img: "img/desk1.webp" },
     { id: "QXJ013BL", name: "Đồng hồ để bàn SEIKO", price: "4.300.000₫", img: "img/desk2.webp" },
@@ -17,7 +20,7 @@ function Deskclock() {
   return (
     <Container className="watch-list mt-4">
       <h2 className="title fw-bold">Các mẫu đồng hồ để bàn trang trí chính hãng tại Galle</h2>
-      <hr/>
+      <hr />
       <Row>
         {watches.map((watch) => (
           <Col key={watch.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
@@ -35,7 +38,16 @@ function Deskclock() {
                   <strong>Giá:</strong> {watch.price}
                 </Card.Text>
                 <div className="mt-auto">
-                  <Button variant="primary" className="watch-btn">Thêm vào giỏ</Button>
+                 <Button
+                    variant="primary"
+                    className="watch-btn"
+                    onClick={() => {
+                      addToCart(watch);
+                       if (onAddToCart) onAddToCart();// Gọi hàm mở popup cart nếu có
+                    }}
+                  >
+                    Thêm vào giỏ
+                  </Button>
                 </div>
               </Card.Body>
             </Card>
