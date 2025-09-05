@@ -1,4 +1,6 @@
+import React, { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
+import StoreSystem from "./Pages/StoreSystem";
 import Home from "./Pages/Home";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -26,42 +28,52 @@ import Comment from "./Pages/Comment";
 import Warranty from "./Pages/Warranty";
 import Return from "./Pages/Return";
 import Security from "./Pages/Security";
-  
+import Cart from './Pages/Cart';
+import { CartProvider } from './contexts/CartContext'; // Sửa lại đường dẫn cho đúng
+
 function App() {
+  const [showCart, setShowCart] = useState(false);
+
   return (
-    <div className="App">
-       <Header />
-       <main>
-        <div className="container">
+    <CartProvider>
+      <div className="App">
+        <Header onCartClick={() => setShowCart(true)}/>
+        <main>
+          <div className="container">
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/watchmen" element={<Watchmen/>}/>
-                <Route path="/watchwomen" element={<Watchwomen/>}/>
-                <Route path="/wallclock" element={<Wallclock/>}/>
-                <Route path="/deskclock" element={<Deskclock/>}/>
-                <Route path="/treeclock" element={<Treeclock/>}/>
-                <Route path="/boxclock" element={<Boxclock/>}/>
-                <Route path="/leatherstrap" element={<Leatherstrap/>}/>
-                <Route path="/service" element={<Service/>}/>
-                <Route path="/repair" element={<Repair/>}/>
-                <Route path="/knowledge" element={<Knowledge/>}/>
-                <Route path="/news" element={<News/>}/>
-                <Route path="/sale" element={<Sale/>}/>
-                <Route path="/casio" element={<Casio/>}/>
-                <Route path="/garmin" element={<Garmin/>}/>
-                <Route path="/newfeed" element={<Newfeed/>}/>
-                <Route path="/profile" element={<Profile/>}/>
-                <Route path="/member" element={<Member/>}/>
-                <Route path="/comment" element={<Comment/>}/> 
-                <Route path="/warranty" element={<Warranty/>}/> 
-                <Route path="/return" element={<Return/>}/> 
-                <Route path="/security" element={<Security/>}/>     
+              <Route path="/" element={<Home />} />
+              <Route path="/watchmen" element={<Watchmen onAddToCart={() => setShowCart(true)} />} />
+              <Route path="/watchwomen" element={<Watchwomen onAddToCart={() => setShowCart(true)} />} />
+              <Route path="/wallclock" element={<Wallclock onAddToCart={() => setShowCart(true)} />} />
+              <Route path="/deskclock" element={<Deskclock onAddToCart={() => setShowCart(true)} />} />
+              <Route path="/treeclock" element={<Treeclock onAddToCart={() => setShowCart(true)} />} />
+              <Route path="/boxclock" element={<Boxclock onAddToCart={() => setShowCart(true)} />} />
+              <Route path="/leatherstrap" element={<Leatherstrap />} />
+              <Route path="/service" element={<Service />} />
+              <Route path="/repair" element={<Repair />} />
+              <Route path="/knowledge" element={<Knowledge />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/sale" element={<Sale onAddToCart={() => setShowCart(true)} />} />
+              <Route path="/casio" element={<Casio onAddToCart={() => setShowCart(true)} />} />
+              <Route path="/garmin" element={<Garmin onAddToCart={() => setShowCart(true)} />} />
+              <Route path="/newfeed" element={<Newfeed />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/member" element={<Member />} />
+              <Route path="/comment" element={<Comment />} />
+              <Route path="/warranty" element={<Warranty />} />
+              <Route path="/return" element={<Return />} />
+              <Route path="/security" element={<Security />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/store-system" element={<StoreSystem />} />
             </Routes>
+            {showCart && <Cart onClose={() => setShowCart(false)} />}
             <Footer1 />
             <Footer />
-        </div>
-       </main>
-    </div>
+            
+          </div>
+        </main>
+      </div>
+    </CartProvider>
   );
 }
 

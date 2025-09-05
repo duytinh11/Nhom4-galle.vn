@@ -1,8 +1,11 @@
+import { useContext } from 'react';
+import { CartContext } from '../contexts/CartContext';
 import { Col, Container, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "./Watch.css";
-function Wallclock() {
+function Wallclock({ onAddToCart }) {
+  const { addToCart } = useContext(CartContext);
   const watches = [
     { id: "QXM381BR", name: "Đồng hồ treo tường SEIKO",type:"Đồng hồ điện tử (Quartz)", price: "10.863.000₫", img: "img/wall1.webp" },
     { id: "QXC213BL", name: "Đồng hồ treo tường SEIKO",type:"Đồng hồ điện tử (Quartz)", price: "3.247.000₫", img: "img/wall2.webp" },
@@ -34,9 +37,16 @@ function Wallclock() {
                   <p>{watch.type}</p>
                   <strong>Giá:</strong> {watch.price}
                 </Card.Text>
-                <div className="mt-auto">
-                    <Button variant="primary" className="watch-btn">Thêm vào giỏ</Button>
-                </div>
+                <Button
+                    variant="primary"
+                    className="watch-btn"
+                    onClick={() => {
+                      addToCart(watch);
+                      if (onAddToCart) onAddToCart();
+                    }}
+                  >
+                    Thêm vào giỏ
+                  </Button>
               </Card.Body>
             </Card>
           </Col>

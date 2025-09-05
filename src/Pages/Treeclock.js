@@ -1,9 +1,12 @@
+import { useContext } from 'react';
+import { CartContext } from '../contexts/CartContext';
 import { Col, Container, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "./Watch.css";
 
-function Treeclock() {
+function Treeclock({ onAddToCart }) {
+  const { addToCart } = useContext(CartContext);
   const watches = [
     { id: "01231-030451", name: "Đồng hồ cây Hermle", price: "55.059.000₫", img: "img/tree1.webp" },
     { id: "01210-031171", name: "Đồng hồ cây Hermle", price: "325.300.000₫", img: "img/tree2.webp" },
@@ -34,9 +37,16 @@ function Treeclock() {
                   <strong>Mã:</strong> {watch.id} <br />
                   <strong>Giá:</strong> {watch.price}
                 </Card.Text>
-                <div className="mt-auto">
-                  <Button variant="primary" className="watch-btn">Thêm vào giỏ</Button>
-                </div>
+                <Button
+                    variant="primary"
+                    className="watch-btn"
+                    onClick={() => {
+                      addToCart(watch);
+                      if (onAddToCart) onAddToCart();
+                    }}
+                  >
+                    Thêm vào giỏ
+                  </Button>
               </Card.Body>
             </Card>
           </Col>

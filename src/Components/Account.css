@@ -1,0 +1,13 @@
+.account-dropdown {
+  display: inline-block;
+}
+
+.account-toggle {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+.account-toggle::after {
+  display: none !important; 
+}
+
