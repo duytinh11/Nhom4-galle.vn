@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./Header.css";
 import { CartContext } from '../contexts/CartContext';
+import Account from "./Account";
 
 function Header({ onCartClick }) {
   const { cartItems } = useContext(CartContext); // Thêm dòng này
@@ -11,6 +12,13 @@ function Header({ onCartClick }) {
   const uniqueTypes = new Set(cartItems.map(item => item.id));
   const totalTypes = uniqueTypes.size;
   // Thêm dòng này
+
+  function Header({ onCartClick }) {
+  const { cartItems } = useContext(CartContext);
+
+  const uniqueTypes = new Set(cartItems.map(item => item.id));
+  const totalTypes = uniqueTypes.size;
+  }
   return (
     <header className="header1">
       <div className="container">
@@ -52,12 +60,7 @@ function Header({ onCartClick }) {
                 <img src="/img/seach.jpg" height="24" alt="Search" />
               </button>
             </div>
-            <a href="#">
-              <img
-                src="https://galle.vn/images/config/account-dark_1718256807.svg"
-                alt="Account"
-              />
-            </a>
+            <Account />
             <a href="#">
               <img
                 src="https://galle.vn/images/config/favorite-dark_1718256807.svg"
