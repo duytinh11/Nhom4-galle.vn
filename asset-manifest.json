@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nhom4-galle.vn/static/css/main.fd3a4d32.css",
+    "main.js": "/Nhom4-galle.vn/static/js/main.d4f60e1d.js",
+    "static/js/453.96453769.chunk.js": "/Nhom4-galle.vn/static/js/453.96453769.chunk.js",
+    "index.html": "/Nhom4-galle.vn/index.html",
+    "main.fd3a4d32.css.map": "/Nhom4-galle.vn/static/css/main.fd3a4d32.css.map",
+    "main.d4f60e1d.js.map": "/Nhom4-galle.vn/static/js/main.d4f60e1d.js.map",
+    "453.96453769.chunk.js.map": "/Nhom4-galle.vn/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd3a4d32.css",
+    "static/js/main.d4f60e1d.js"
+  ]
+}
