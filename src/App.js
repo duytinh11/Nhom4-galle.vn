@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
+import StoreSystem from "./Pages/StoreSystem";
 import Home from "./Pages/Home";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -63,6 +64,7 @@ function App() {
               <Route path="/return" element={<Return />} />
               <Route path="/security" element={<Security />} />
               <Route path="/cart" element={<Cart />} />
+              <Route path="/store-system" element={<StoreSystem />} />
             </Routes>
             {showCart && <Cart onClose={() => setShowCart(false)} />}
             <Footer1 />

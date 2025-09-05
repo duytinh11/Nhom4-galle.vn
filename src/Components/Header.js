@@ -26,13 +26,13 @@ function Header({ onCartClick }) {
         <div className="header1-top">
           {/* Trái */}
           <div className="header1-left">
-            <a href="#" className="item">
+            <Link to="/store-system" className="item">
               <img
                 src="https://galle.vn/images/config/location_1718256784.svg"
                 alt="Store"
               />
               <span>HỆ THỐNG CỬA HÀNG</span>
-            </a>
+            </Link>
             <a href="tel:18006785" className="item">
               <img
                 src="https://galle.vn/images/config/call-dark_1718256807.svg"
@@ -44,12 +44,12 @@ function Header({ onCartClick }) {
 
           {/* Logo */}
           <div className="header1-logo">
-            <a href="#">
+            <Link to="/">
               <img
                 src="https://galle.vn/images/config/logo_1718252240.svg"
                 alt="Galle Watch"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Phải */}
