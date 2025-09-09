@@ -53,7 +53,16 @@ function Home({ onAddToCart }) {
                   <strong>Giá:</strong> {watch.price}
                 </Card.Text>
                 <div className="mt-auto">
-                  <Button variant="primary" className="watch-btn">Thêm vào giỏ</Button>
+                 <Button
+                    variant="primary"
+                    className="watch-btn"
+                    onClick={() => {
+                      addToCart(watch);
+                      if (onAddToCart) onAddToCart();
+                    }}
+                  >
+                    Thêm vào giỏ
+                  </Button>
                 </div>
               </Card.Body>
             </Card>
@@ -106,7 +115,16 @@ function Home({ onAddToCart }) {
                   <strong>Giá:</strong> {watch.price}
                 </Card.Text>
                 <div className="mt-auto">
-                  <Button variant="primary" className="watch-btn">Thêm vào giỏ</Button>
+                  <Button
+                    variant="primary"
+                    className="watch-btn"
+                    onClick={() => {
+                      addToCart(watch);
+                      if (onAddToCart) onAddToCart();
+                    }}
+                  >
+                    Thêm vào giỏ
+                  </Button>
                 </div>
               </Card.Body>
             </Card>

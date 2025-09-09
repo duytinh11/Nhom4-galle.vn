@@ -28,7 +28,10 @@ import Warranty from "./Pages/Warranty";
 import Return from "./Pages/Return";
 import Security from "./Pages/Security";
 import Cart from './Pages/Cart';
-import { CartProvider } from './contexts/CartContext'; // Sửa lại đường dẫn cho đúng
+// import CartPages from './Pages/CartPages';
+import { CartProvider } from './contexts/CartContext';
+
+ // Sửa lại đường dẫn cho đúng
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -63,6 +66,9 @@ function App() {
               <Route path="/return" element={<Return />} />
               <Route path="/security" element={<Security />} />
               <Route path="/cart" element={<Cart />} />
+              {/* <Route path="/cart" element={<CartPages />} /> */}
+
+
             </Routes>
             {showCart && <Cart onClose={() => setShowCart(false)} />}
             <Footer1 />

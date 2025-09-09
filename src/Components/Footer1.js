@@ -100,12 +100,14 @@ const Footer = () => (
               width="124"
               height="47"
               alt="Đã thông báo Bộ Công Thương"
+              className="certification-logo"
             />
             <img
               src="https://galle.vn/images/config/dmca_protected_sml_120al_1721815270.png"
               width="124"
               height="21"
               alt="DMCA Protected"
+              className="dmca-logo"
             />
             <div className="payment-methods">
               <h3>PHƯƠNG THỨC THANH TOÁN</h3>

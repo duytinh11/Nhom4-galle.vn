@@ -80,6 +80,9 @@ body {
   float: left;
   grid-column: span 2;
 }
+.certifications img {
+ margin-left: 10px;
+}
 
 .footer-container h3 {
   color: #6a1b9a;
