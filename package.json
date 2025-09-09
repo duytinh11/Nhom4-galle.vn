@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://duytinh11.github.io/Nhom4-galle.vn",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

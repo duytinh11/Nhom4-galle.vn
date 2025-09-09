@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
+import StoreSystem from "./Pages/StoreSystem";
 import Home from "./Pages/Home";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -28,7 +29,6 @@ import Warranty from "./Pages/Warranty";
 import Return from "./Pages/Return";
 import Security from "./Pages/Security";
 import Cart from './Pages/Cart';
-// import CartPages from './Pages/CartPages';
 import { CartProvider } from './contexts/CartContext';
 
  // Sửa lại đường dẫn cho đúng
@@ -66,8 +66,9 @@ function App() {
               <Route path="/return" element={<Return />} />
               <Route path="/security" element={<Security />} />
               <Route path="/cart" element={<Cart />} />
-              {/* <Route path="/cart" element={<CartPages />} /> */}
 
+             
+              <Route path="/store-system" element={<StoreSystem />} />
 
             </Routes>
             {showCart && <Cart onClose={() => setShowCart(false)} />}

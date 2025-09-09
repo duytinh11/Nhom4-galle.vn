@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./Header.css";
 import { CartContext } from '../contexts/CartContext';
+import Account from "./Account";
 
 function Header({ onCartClick }) {
   const { cartItems } = useContext(CartContext); // Thêm dòng này
@@ -11,6 +12,13 @@ function Header({ onCartClick }) {
   const uniqueTypes = new Set(cartItems.map(item => item.id));
   const totalTypes = uniqueTypes.size;
   // Thêm dòng này
+
+  function Header({ onCartClick }) {
+  const { cartItems } = useContext(CartContext);
+
+  const uniqueTypes = new Set(cartItems.map(item => item.id));
+  const totalTypes = uniqueTypes.size;
+  }
   return (
     <header className="header1">
       <div className="container">
@@ -18,13 +26,13 @@ function Header({ onCartClick }) {
         <div className="header1-top">
           {/* Trái */}
           <div className="header1-left">
-            <a href="#" className="item">
+            <Link to="/store-system" className="item">
               <img
                 src="https://galle.vn/images/config/location_1718256784.svg"
                 alt="Store"
               />
               <span>HỆ THỐNG CỬA HÀNG</span>
-            </a>
+            </Link>
             <a href="tel:18006785" className="item">
               <img
                 src="https://galle.vn/images/config/call-dark_1718256807.svg"
@@ -36,12 +44,12 @@ function Header({ onCartClick }) {
 
           {/* Logo */}
           <div className="header1-logo">
-            <a href="#">
+            <Link to="/">
               <img
                 src="https://galle.vn/images/config/logo_1718252240.svg"
                 alt="Galle Watch"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Phải */}
@@ -52,12 +60,7 @@ function Header({ onCartClick }) {
                 <img src="/img/seach.jpg" height="24" alt="Search" />
               </button>
             </div>
-            <a href="#">
-              <img
-                src="https://galle.vn/images/config/account-dark_1718256807.svg"
-                alt="Account"
-              />
-            </a>
+            <Account />
             <a href="#">
               <img
                 src="https://galle.vn/images/config/favorite-dark_1718256807.svg"
